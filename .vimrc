@@ -17,6 +17,18 @@ call plug#end()
 syntax on
 filetype on
 set ignorecase
+set ruler
+set laststatus=2
+" statusline:file name
+set statusline=%F
+" statusline:start from right
+set statusline+=%= 
+" statusline:filetype
+set statusline+=Filetype:\ %y\ 
+" statusline:current linenum and collum
+set statusline+=cur_pos:%l,%c\ 
+" statusline:total linenum
+set statusline+=total_line:%L\ 
 set hlsearch
 set incsearch
 set showmatch
